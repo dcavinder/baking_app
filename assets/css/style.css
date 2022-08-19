@@ -1,0 +1,126 @@
+:root {
+    --dark: #fdd3d3;
+    --medium: #a16aaf;
+    --medium-light: #ff5757;
+    --light: #679289;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+header {
+    display:inline-flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background-color: var(--dark);
+    margin-bottom: 3%;
+}
+
+header nav {
+    display: inline-flex;
+    justify-content: flex-end;
+    padding-top: 5%;
+    float: right;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+
+header nav ul {
+    float: right;
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+header h1 {
+    display: flex;
+    padding-top: 4%;
+    color: var(--medium-light);
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    background-color: #faf4dd;
+    border: var(--medium) solid 2px;
+    Margin: 1%;
+}
+
+main section h3 {
+    position: relative;
+    height: 50px;
+    width: 80%;
+    color: var(--medium-light);
+    padding: 3%;
+    background-color: var(--dark);
+    border: var(--medium) solid 2px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+    margin-left: 6%;
+    margin-top: -10%;
+}
+
+main section:hover h3 {
+    box-shadow: inset 0px 0px 8px
+    rgba(241, 100, 100, 0.3), 0 0 15px
+    rgba(239, 97, 244, 0.6);
+}
+
+main section p {
+    padding: 3%;
+    color: var(--medium);
+}
+
+main section img {
+    display: flex;
+    max-width: 200px;
+    max-height: 200px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.code-bit {
+    border-radius: 8px;
+    background-image: linear-gradient(
+        rgba(0, 128, 0, 0.3) 0%
+        rgba(0, 255, 0, 0.6) 100%
+    );
+    width: 95%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: var(--medium-light);
+}
